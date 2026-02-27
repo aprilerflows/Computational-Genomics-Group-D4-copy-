@@ -1,0 +1,236 @@
+Number of sequences analyzed:        35
+
+Sequence 1 : output_dir_D0287766_reference/D0287766_S01_L001-SKESA_contigs.fasta.ref
+D0287766_S01_L001-SKESA_contigs.fasta.ref
+Length:   1689317 bps
+ GC:  511832.0
+ AT: 1177485.0
+Sequence 2 : /home/nkodgi/group4/input-sequences-final/D0599005_S01_L001-SKESA_contigs.fasta
+D0599005_S01_L001-SKESA_contigs.fasta
+Length:   1664434 bps
+ GC:  500541.0
+ AT: 1146223.0
+Sequence 3 : /home/nkodgi/group4/input-sequences-final/D1507169_S01_L001-SKESA_contigs.fasta
+D1507169_S01_L001-SKESA_contigs.fasta
+Length:   1724481 bps
+ GC:  520466.0
+ AT: 1198125.0
+Sequence 4 : /home/nkodgi/group4/input-sequences-final/D1212247_S01_L001-SKESA_contigs.fasta
+D1212247_S01_L001-SKESA_contigs.fasta
+Length:   1764395 bps
+ GC:  517300.0
+ AT: 1176725.0
+Sequence 5 : /home/nkodgi/group4/input-sequences-final/D0340971_S01_L001-SKESA_contigs.fasta
+D0340971_S01_L001-SKESA_contigs.fasta
+Length:   1761850 bps
+ GC:  504928.0
+ AT: 1147802.0
+Sequence 6 : /home/nkodgi/group4/input-sequences-final/D0281446_S01_L001-SKESA_contigs.fasta
+D0281446_S01_L001-SKESA_contigs.fasta
+Length:   1726159 bps
+ GC:  520761.0
+ AT: 1196098.0
+Sequence 7 : /home/nkodgi/group4/input-sequences-final/D0287766_S01_L001-SKESA_contigs.fasta
+D0287766_S01_L001-SKESA_contigs.fasta
+Length:   1697377 bps
+ GC:  511832.0
+ AT: 1177485.0
+Sequence 8 : /home/nkodgi/group4/input-sequences-final/D1130645_S01_L001-SKESA_contigs.fasta
+D1130645_S01_L001-SKESA_contigs.fasta
+Length:   1697997 bps
+ GC:  513246.0
+ AT: 1180101.0
+Sequence 9 : /home/nkodgi/group4/input-sequences-final/D1025689_S01_L001-SKESA_contigs.fasta
+D1025689_S01_L001-SKESA_contigs.fasta
+Length:   1660367 bps
+ GC:  500641.0
+ AT: 1147016.0
+Sequence 10 : /home/nkodgi/group4/input-sequences-final/D1874688_S01_L001-SKESA_contigs.fasta
+D1874688_S01_L001-SKESA_contigs.fasta
+Length:   1659912 bps
+ GC:  502280.0
+ AT: 1152672.0
+Sequence 11 : /home/nkodgi/group4/input-sequences-final/D1816817_S01_L001-SKESA_contigs.fasta
+D1816817_S01_L001-SKESA_contigs.fasta
+Length:   1677226 bps
+ GC:  496860.0
+ AT: 1132006.0
+Sequence 12 : /home/nkodgi/group4/input-sequences-final/D1251843_S01_L001-SKESA_contigs.fasta
+D1251843_S01_L001-SKESA_contigs.fasta
+Length:   1734197 bps
+ GC:  523662.0
+ AT: 1205885.0
+Sequence 13 : /home/nkodgi/group4/input-sequences-final/D0372208_S01_L001-SKESA_contigs.fasta
+D0372208_S01_L001-SKESA_contigs.fasta
+Length:   1732499 bps
+ GC:  519621.0
+ AT: 1193968.0
+Sequence 14 : /home/nkodgi/group4/input-sequences-final/D2306186_S01_L001-SKESA_contigs.fasta
+D2306186_S01_L001-SKESA_contigs.fasta
+Length:   1657923 bps
+ GC:  501464.0
+ AT: 1150569.0
+Sequence 15 : /home/nkodgi/group4/input-sequences-final/D2306204_S01_L001-SKESA_contigs.fasta
+D2306204_S01_L001-SKESA_contigs.fasta
+Length:   1657018 bps
+ GC:  501516.0
+ AT: 1150852.0
+Sequence 16 : /home/nkodgi/group4/input-sequences-final/D0465287_S01_L001-SKESA_contigs.fasta
+D0465287_S01_L001-SKESA_contigs.fasta
+Length:   1676616 bps
+ GC:  497191.0
+ AT: 1134475.0
+Sequence 17 : /home/nkodgi/group4/input-sequences-final/D0305916_S01_L001-SKESA_contigs.fasta
+D0305916_S01_L001-SKESA_contigs.fasta
+Length:   1700275 bps
+ GC:  512060.0
+ AT: 1177055.0
+Sequence 18 : /home/nkodgi/group4/input-sequences-final/D0570846_S01_L001-SKESA_contigs.fasta
+D0570846_S01_L001-SKESA_contigs.fasta
+Length:   1652460 bps
+ GC:  499305.0
+ AT: 1146645.0
+Sequence 19 : /home/nkodgi/group4/input-sequences-final/D2453159_S01_L001-SKESA_contigs.fasta
+D2453159_S01_L001-SKESA_contigs.fasta
+Length:   1655651 bps
+ GC:  500273.0
+ AT: 1148868.0
+Sequence 20 : /home/nkodgi/group4/input-sequences-final/D0320058_S01_L001-SKESA_contigs.fasta
+D0320058_S01_L001-SKESA_contigs.fasta
+Length:   1662340 bps
+ GC:  494214.0
+ AT: 1122866.0
+Sequence 21 : /home/nkodgi/group4/input-sequences-final/D0717665_S01_L001-SKESA_contigs.fasta
+D0717665_S01_L001-SKESA_contigs.fasta
+Length:   1788494 bps
+ GC:  530181.0
+ AT: 1218013.0
+Sequence 22 : /home/nkodgi/group4/input-sequences-final/D1742262_S01_L001-SKESA_contigs.fasta
+D1742262_S01_L001-SKESA_contigs.fasta
+Length:   1702876 bps
+ GC:  510204.0
+ AT: 1170662.0
+Sequence 23 : /home/nkodgi/group4/input-sequences-final/D1088210_S01_L001-SKESA_contigs.fasta
+D1088210_S01_L001-SKESA_contigs.fasta
+Length:   1731589 bps
+ GC:  498017.0
+ AT: 1125692.0
+Sequence 24 : /home/nkodgi/group4/input-sequences-final/D0717763_S01_L001-SKESA_contigs.fasta
+D0717763_S01_L001-SKESA_contigs.fasta
+Length:   1683782 bps
+ GC:  495731.0
+ AT: 1129151.0
+Sequence 25 : /home/nkodgi/group4/input-sequences-final/D0110039_S01_L001-SKESA_contigs.fasta
+D0110039_S01_L001-SKESA_contigs.fasta
+Length:   1652460 bps
+ GC:  499305.0
+ AT: 1146645.0
+Sequence 26 : /home/nkodgi/group4/input-sequences-final/D1786215_S01_L001-SKESA_contigs.fasta
+D1786215_S01_L001-SKESA_contigs.fasta
+Length:   1661058 bps
+ GC:  502918.0
+ AT: 1153490.0
+Sequence 27 : /home/nkodgi/group4/input-sequences-final/D1130644_S01_L001-SKESA_contigs.fasta
+D1130644_S01_L001-SKESA_contigs.fasta
+Length:   1698979 bps
+ GC:  513723.0
+ AT: 1180916.0
+Sequence 28 : /home/nkodgi/group4/input-sequences-final/D0784258_S01_L001-SKESA_contigs.fasta
+D0784258_S01_L001-SKESA_contigs.fasta
+Length:   1667750 bps
+ GC:  490476.0
+ AT: 1110624.0
+Sequence 29 : /home/nkodgi/group4/input-sequences-final/D0262590_S01_L001-SKESA_contigs.fasta
+D0262590_S01_L001-SKESA_contigs.fasta
+Length:   1654971 bps
+ GC:  499063.0
+ AT: 1144128.0
+Sequence 30 : /home/nkodgi/group4/input-sequences-final/D0537729_S01_L001-SKESA_contigs.fasta
+D0537729_S01_L001-SKESA_contigs.fasta
+Length:   1779025 bps
+ GC:  523826.0
+ AT: 1198469.0
+Sequence 31 : /home/nkodgi/group4/input-sequences-final/D0331520_S01_L001-SKESA_contigs.fasta
+D0331520_S01_L001-SKESA_contigs.fasta
+Length:   1732757 bps
+ GC:  518825.0
+ AT: 1193162.0
+Sequence 32 : /home/nkodgi/group4/input-sequences-final/D1490961_S01_L001-SKESA_contigs.fasta
+D1490961_S01_L001-SKESA_contigs.fasta
+Length:   1721825 bps
+ GC:  502245.0
+ AT: 1138670.0
+Sequence 33 : /home/nkodgi/group4/input-sequences-final/D0892467_S01_L001-SKESA_contigs.fasta
+D0892467_S01_L001-SKESA_contigs.fasta
+Length:   1674122 bps
+ GC:  501507.0
+ AT: 1145955.0
+Sequence 34 : /home/nkodgi/group4/input-sequences-final/D0133463_S01_L001-SKESA_contigs.fasta
+D0133463_S01_L001-SKESA_contigs.fasta
+Length:   1681249 bps
+ GC:  496805.0
+ AT: 1132674.0
+Sequence 35 : /home/nkodgi/group4/input-sequences-final/D0595886_S01_L001-SKESA_contigs.fasta
+D0595886_S01_L001-SKESA_contigs.fasta
+Length:   1665975 bps
+ GC:  499126.0
+ AT: 1139879.0
+d value:   300
+q value:   30
+
+Mum anchor size:   23.0
+Number of MUM anchors found:   5824
+Number of MUMs found:   612
+Total MUMs found((Anchors+MUMs)-filtered):   5955
+
+Random MUM length:   1 
+Minimum Cluster length:   21
+Number of MUMs filtered:   481
+Number of Clusters filtered:   480
+
+Number of clusters created:   852
+Average number of MUMs per cluster:   6 
+Average cluster length:   1634 bps
+Cluster coverage in sequence 1:   82.5%
+Cluster coverage in sequence 2:   84.6%
+Cluster coverage in sequence 3:   81.0%
+Cluster coverage in sequence 4:   82.2%
+Cluster coverage in sequence 5:   84.3%
+Cluster coverage in sequence 6:   81.1%
+Cluster coverage in sequence 7:   82.5%
+Cluster coverage in sequence 8:   82.3%
+Cluster coverage in sequence 9:   84.5%
+Cluster coverage in sequence 10:   84.2%
+Cluster coverage in sequence 11:   85.5%
+Cluster coverage in sequence 12:   80.5%
+Cluster coverage in sequence 13:   81.3%
+Cluster coverage in sequence 14:   84.3%
+Cluster coverage in sequence 15:   84.3%
+Cluster coverage in sequence 16:   85.4%
+Cluster coverage in sequence 17:   82.5%
+Cluster coverage in sequence 18:   84.6%
+Cluster coverage in sequence 19:   84.5%
+Cluster coverage in sequence 20:   86.1%
+Cluster coverage in sequence 21:   79.7%
+Cluster coverage in sequence 22:   82.9%
+Cluster coverage in sequence 23:   85.8%
+Cluster coverage in sequence 24:   85.7%
+Cluster coverage in sequence 25:   84.6%
+Cluster coverage in sequence 26:   84.1%
+Cluster coverage in sequence 27:   82.2%
+Cluster coverage in sequence 28:   87.0%
+Cluster coverage in sequence 29:   84.8%
+Cluster coverage in sequence 30:   80.9%
+Cluster coverage in sequence 31:   81.4%
+Cluster coverage in sequence 32:   84.9%
+Cluster coverage in sequence 33:   84.5%
+Cluster coverage in sequence 34:   85.5%
+Cluster coverage in sequence 35:   85.0%
+Total coverage among all sequences:   82.1%
+
+ MUM anchor search elapsed time:   52.0s 
+ MUM coarsening elapsed time:   2.0s 
+ MUM filtering elapsed time:   0.0s 
+ MUM clustering elapsed time:   0.0s 
+ Inter-clustering elapsed time:   1.0s 
+ Total running time:   55.0s 

@@ -1,0 +1,6 @@
+Process,Algorithm,Version,Model,Citation
+Overall,Gubbins,3.4,-,https://doi.org/10.1093/nar/gku1196
+Tree constructor (1st iteration),raxmlHPC-SSE3,8.2.12,GTRGAMMA,https://doi.org/10.1093/bioinformatics/btu033
+Model fitter (1st iteration),raxmlHPC-SSE3,8.2.12,GTRGAMMA,https://doi.org/10.1093/bioinformatics/btu033
+Sequence reconstructor,pyjar,1.0,GTRGAMMA,https://doi.org/10.1093/oxfordjournals.molbev.a026369
+Tree constructor (later iterations),raxmlHPC-SSE3,8.2.12,GTRGAMMA,https://doi.org/10.1093/bioinformatics/btu033

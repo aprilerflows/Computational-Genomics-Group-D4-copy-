@@ -1,0 +1,17 @@
+name: outbreak_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - nextflow
+  - openjdk=11
+  - parsnp
+  - harvesttools
+  - gubbins
+
+
+
+
+
+
+

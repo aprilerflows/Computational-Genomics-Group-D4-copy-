@@ -1,0 +1,54 @@
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~\
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/bactmap v1.0.0
+----------------------------------------------------
+
+Run Name: clever_morse
+
+## nf-core/bactmap execution completed successfully! ##
+
+
+The workflow was completed at 2025-04-11T18:33:50.113133730-04:00 (duration: 14m 5s)
+
+The command used to launch the workflow was as follows:
+
+  nextflow run nf-core/bactmap --input samplesheet.csv --reference reference.fa -profile docker --trim --remove_recombination --iqtree --max_memory 15.GB -resume
+
+
+
+Pipeline Configuration:
+-----------------------
+ - revision: master
+ - runName: clever_morse
+ - containerEngine: docker
+ - launchDir: /home/chadchoudhry/2025_Team_D
+ - workDir: /home/chadchoudhry/2025_Team_D/work
+ - projectDir: /home/chadchoudhry/.nextflow/assets/nf-core/bactmap
+ - userName: chadchoudhry
+ - profile: docker
+ - configFiles: /home/chadchoudhry/.nextflow/assets/nf-core/bactmap/nextflow.config
+ - input: samplesheet.csv
+ - reference: reference.fa
+ - adapter_file: /home/chadchoudhry/.nextflow/assets/nf-core/bactmap/assets/adapters.fas
+ - remove_recombination: true
+ - iqtree: true
+ - max_memory: 15.GB
+ - max_time: 168.h
+ - Date Started: 2025-04-11T18:19:45.612486917-04:00
+ - Date Completed: 2025-04-11T18:33:50.113133730-04:00
+ - Pipeline script file path: /home/chadchoudhry/.nextflow/assets/nf-core/bactmap/main.nf
+ - Pipeline script hash ID: 2e456c24888337ef099dc16d232b46a5
+ - Pipeline repository Git URL: https://github.com/nf-core/bactmap
+ - Pipeline repository Git Commit: e83f8c5f0e7020d69649d5d2ad19f79e9b2302b7
+ - Pipeline Git branch/tag: master
+ - Nextflow Version: 24.10.5
+ - Nextflow Build: 5935
+ - Nextflow Compile Timestamp: 04-03-2025 17:55 UTC
+
+--
+nf-core/bactmap
+https://github.com/nf-core/bactmap

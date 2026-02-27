@@ -1,0 +1,4 @@
+assembly_id	taxid	num_SCG_hits	uniq_SCG_hits	perc_comp	perc_redund	num_SCG_hits_after_len_filt	in_final_tree
+D0110039_S01_L001	NA	257	257	98.85	0.00	257	Yes
+D0340971_S01_L001	NA	237	237	91.15	0.00	229	Yes
+reference_genome	NA	257	257	98.85	0.00	257	Yes

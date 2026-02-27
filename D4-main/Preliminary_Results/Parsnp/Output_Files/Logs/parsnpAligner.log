@@ -1,0 +1,62 @@
+Number of sequences analyzed:         6
+
+Sequence 1 : output_dir/GCF_000009085.1_ASM908v1_genomic.fna.ref
+GCF_000009085.1_ASM908v1_genomic.fna.ref
+Length:   1641481 bps
+ GC:  501449.0
+ AT: 1140032.0
+Sequence 2 : /home/nkodgi/group4/input-sequences/D0340971_S01_L001-SKESA_contigs.fasta
+D0340971_S01_L001-SKESA_contigs.fasta
+Length:   1761850 bps
+ GC:  504928.0
+ AT: 1147802.0
+Sequence 3 : /home/nkodgi/group4/input-sequences/D0287766_S01_L001-SKESA_contigs.fasta
+D0287766_S01_L001-SKESA_contigs.fasta
+Length:   1697377 bps
+ GC:  511832.0
+ AT: 1177485.0
+Sequence 4 : /home/nkodgi/group4/input-sequences/D0110039_S01_L001-SKESA_contigs.fasta
+D0110039_S01_L001-SKESA_contigs.fasta
+Length:   1652460 bps
+ GC:  499305.0
+ AT: 1146645.0
+Sequence 5 : /home/nkodgi/group4/input-sequences/D0262590_S01_L001-SKESA_contigs.fasta
+D0262590_S01_L001-SKESA_contigs.fasta
+Length:   1654971 bps
+ GC:  499063.0
+ AT: 1144128.0
+Sequence 6 : /home/nkodgi/group4/input-sequences/D0133463_S01_L001-SKESA_contigs.fasta
+D0133463_S01_L001-SKESA_contigs.fasta
+Length:   1681249 bps
+ GC:  496805.0
+ AT: 1132674.0
+d value:   300
+q value:   30
+
+Mum anchor size:   23.0
+Number of MUM anchors found:   9685
+Number of MUMs found:   1374
+Total MUMs found((Anchors+MUMs)-filtered):   10431
+
+Random MUM length:   1 
+Minimum Cluster length:   21
+Number of MUMs filtered:   628
+Number of Clusters filtered:   610
+
+Number of clusters created:   582
+Average number of MUMs per cluster:   17
+Average cluster length:   2439 bps
+Cluster coverage in sequence 1:   86.5%
+Cluster coverage in sequence 2:   85.9%
+Cluster coverage in sequence 3:   84.1%
+Cluster coverage in sequence 4:   86.3%
+Cluster coverage in sequence 5:   86.4%
+Cluster coverage in sequence 6:   87.1%
+Total coverage among all sequences:   84.4%
+
+ MUM anchor search elapsed time:   6.0s 
+ MUM coarsening elapsed time:   0.0s 
+ MUM filtering elapsed time:   0.0s 
+ MUM clustering elapsed time:   0.0s 
+ Inter-clustering elapsed time:   2.0s 
+ Total running time:   8.0s 

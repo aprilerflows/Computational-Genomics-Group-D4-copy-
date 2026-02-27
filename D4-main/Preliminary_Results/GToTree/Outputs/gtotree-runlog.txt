@@ -1,0 +1,2502 @@
+
+
+               GToTree v1.8.4 (github.com/AstrobioMike/GToTree)
+
+    Command entered:
+    /Users/malarmuthu/miniforge3/envs/gtt_env/bin/gtotree -f input_files.txt -H Epsilonproteobacteria -o Group4_prelim
+
+
+ ---------------------------------  RUN INFO  --------------------------------- 
+
+
+    Input genome sources include:
+      - Fasta files listed in input_files.txt (3 genomes)
+
+                             Total input genomes: 3
+
+    HMM source to be used:
+      - Epsilonproteobacteria (260 targets)
+
+    Options set:
+      - The output directory has been set to "Group4_prelim/"
+
+  ********************************** NOTICE **********************************  
+    Filtering by gene-length using the median length of a gene set (set with
+    the `-c` flag) becomes less reliable with fewer genomes. With 3 total
+    input genomes, if a lot of sequences are dropped, consider increasing
+    the parameter and/or visually inspecting the alignments.
+
+    More info can be found here:
+      github.com/AstrobioMike/GToTree/wiki/Things-to-consider
+
+	        Moving forward with "-c" set to 0.2 this run.
+  ****************************************************************************  
+
+
+ ############################################################################## 
+ ####            Working on the genomes provided as fasta files            ####
+ ############################################################################## 
+
+           It is currently 10:01 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 0 minutes.
+
+_______________________________________________________________________________
+
+
+ ############################################################################## 
+ ####                     Filtering genes by length                        ####
+ ############################################################################## 
+
+     Keeping those with lengths within 20% of the median for the gene set.
+
+           It is currently 10:02 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 0 minutes.
+
+  ********************************** NOTICE **********************************  
+    3 gene(s) either had no hits in any genome, a hit in only one genome, or
+    only multiple hits per genome... Just so ya know!!
+
+        These included:
+
+                     5-FTHF_cyc-lig
+                     DUF448
+                     Ribosomal_L36
+
+    Reported in "Group4_prelim/run_files/Target-genes-not-found-or-retained.txt".
+
+   If interested, you can figure out which of those scenarios was the cause by
+   checking out "Group4_prelim/SCG_hit_counts.tsv".
+  ****************************************************************************  
+
+   --------------------------------------------------------------------------   
+
+    Filtering Actin sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Adenylsucc_synt sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ADK sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ALAD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Amidase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Amidase_3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Asparaginase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ATP-synt sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ATP-synt_A sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ATP-synt_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ATP-synt_DE_N sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ATPase_gene1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Bac_DNA_binding sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Bac_export_1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Bac_export_3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Bactofilin sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Bax1-I sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Chorismate_synt sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering CinA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering CoaE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Colicin_V sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering COX1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Cpn10 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Cpn60_TCP1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering CRCB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering CstA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering CTP_transf_1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Cytochrom_C1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DAGK_prokar sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DAHP_synth_1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DAHP_synth_2 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DAP_epimerase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DapB_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DHBP_synthase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DHQ_synthase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DHquinase_II sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DMRL_synthase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DNA_processg_A sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DsbD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF2018 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF2603 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF3972 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF4006 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF4149 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF465 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF493 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF5051 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering DUF507 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering EF_TS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering EI24 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering eIF-1a sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Enolase_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Exonuc_VII_L sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Exonuc_VII_S sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering F_bP_aldolase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FA_synthesis sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FabA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FbpA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FBPase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ferrochelatase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FHIPEP sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FixO sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FixQ sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FixS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FlaG sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FlgH sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FlgI sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FlgM sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliH sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliJ sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliL sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliM sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliP sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FliS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering FolB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering G3P_acyltransf sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering GatB_N sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering GcpE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Gln-synt_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Glu-tRNAGln sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering GrpE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering GSP_synth sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HD_2 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HD_3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HEM4 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HobA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HP0268 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HPPK sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HSP90 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HupF_HypC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HyaE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HycI sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HypA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering HypD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ILVD_EDD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering IPPT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering IPT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Iso_dh sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering KH_4 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LacAB_rpiB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LGT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Lip_A_acyltrans sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LolA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LptE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LpxB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LpxC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LpxK sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Lum_binding sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LuxS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering LYTB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Maf sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MerR_2 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Methyltrans_RNA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Methyltransf_5 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MlaE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MnmE_helical sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MoaC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MoaE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Mqo sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MreC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering MurJ sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering NAD_kinase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering NDK sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering NIF3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering NifU_N sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering NusG sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering OMPdecase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering OSCP sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Oxidored_q3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Oxidored_q4 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pan_kinase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PDH sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PdxA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PdxJ sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pep_deformylase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pept_tRNA_hydro sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_A8 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_M17 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_M22 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_M3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_M99 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Peptidase_U32 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PGBA_N sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PGI sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PGK sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PgpA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PhnA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PHO4 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PMSR sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Porphobil_deam sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PRAI sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Prenyltransf sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pro_CA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pro_isomerase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Proteasome sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PseudoU_synth_1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering PTPS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Put_Phosphatase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Pyrophosphatase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering QueH sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Queuosine_synth sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RBFA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribonuc_red_lgC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribonuc_red_sm sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribonuclease_P sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosom_S12_S23 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L13 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L14 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L16 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L17 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L18p sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L19 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L20 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L21p sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L22 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L23 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering ribosomal_L24 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L27 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L27A sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L28 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L29 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L3 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L31 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L32p sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L33 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L34 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L35p sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L4 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L6 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_L9_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S10 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S11 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S13 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S14 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S15 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S16 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S17 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S19 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S2 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S20p sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S21 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S6 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S7 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S8 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribosomal_S9 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Ribul_P_3_epim sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RNA_pol_L sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RNA_pol_Rpb6 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RNase_HII sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RRF sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RsfS sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RuvC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering RuvX sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Sacchrp_dh_C sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Sdh_cyt sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SecE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SecG sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SecY sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SelA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SelR sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SHMT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SmpB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SPOUT_MTase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Sua5_yciO_yrdC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering SurE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TAL_FSA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TatC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TatD_DNase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TerB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TGT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Thy1 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TP_methylase sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Transcrip_reg sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering tRNA_m1G_MT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering tRNA_synt_2f sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering tRNA-synt_1d sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering tRNA-synt_2c sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering tRNA-synt_2e sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TruD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Trypsin sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering TsaE sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UbiA sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UbiD sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UPF0054 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UPF0093 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UPF0102 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering UPF0114 sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering URO-D sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering Virul_fac_BrkB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YajC sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YbaB_DNA_bd sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YceG sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YgbB sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YGGT sequences by length...
+   --------------------------------------------------------------------------   
+
+    Filtering YidD sequences by length...
+________________________________________________________________________________ 
+
+
+
+ ############################################################################## 
+ ####                Filtering genomes with too few hits                   ####
+ ############################################################################## 
+
+     Removing those with fewer than 50% of the total SCGs targeted.
+
+           It is currently 10:05 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 3 minutes.
+
+             No genomes were removed for having too few hits :)
+
+________________________________________________________________________________
+
+
+
+ ############################################################################## 
+ ####          Aligning, trimming, and inserting gap-sequences             ####
+ ############################################################################## 
+
+           It is currently 10:05 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 3 minutes.
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Actin; Number 1 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Adenylsucc_synt; Number 2 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ADK; Number 3 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ALAD; Number 4 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Amidase; Number 5 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Amidase_3; Number 6 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Asparaginase; Number 7 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ATP-synt; Number 8 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ATP-synt_A; Number 9 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ATP-synt_C; Number 10 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ATP-synt_DE_N; Number 11 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ATPase_gene1; Number 12 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Bac_DNA_binding; Number 13 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Bac_export_1; Number 14 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Bac_export_3; Number 15 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Bactofilin; Number 16 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Bax1-I; Number 17 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Chorismate_synt; Number 18 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene CinA; Number 19 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene CoaE; Number 20 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Colicin_V; Number 21 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene COX1; Number 22 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Cpn10; Number 23 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Cpn60_TCP1; Number 24 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene CRCB; Number 25 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene CstA; Number 26 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene CTP_transf_1; Number 27 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Cytochrom_C1; Number 28 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DAGK_prokar; Number 29 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DAHP_synth_1; Number 30 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DAHP_synth_2; Number 31 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DAP_epimerase; Number 32 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DapB_C; Number 33 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DHBP_synthase; Number 34 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DHQ_synthase; Number 35 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DHquinase_II; Number 36 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DMRL_synthase; Number 37 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DNA_processg_A; Number 38 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DsbD; Number 39 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF2018; Number 40 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF2603; Number 41 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF3972; Number 42 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF4006; Number 43 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF4149; Number 44 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF465; Number 45 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF493; Number 46 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF5051; Number 47 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene DUF507; Number 48 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene EF_TS; Number 49 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene EI24; Number 50 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene eIF-1a; Number 51 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Enolase_C; Number 52 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Exonuc_VII_L; Number 53 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Exonuc_VII_S; Number 54 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene F_bP_aldolase; Number 55 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FA_synthesis; Number 56 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FabA; Number 57 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FbpA; Number 58 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FBPase; Number 59 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ferrochelatase; Number 60 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FHIPEP; Number 61 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FixO; Number 62 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FixQ; Number 63 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FixS; Number 64 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FlaG; Number 65 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FlgH; Number 66 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FlgI; Number 67 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FlgM; Number 68 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliE; Number 69 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliH; Number 70 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliJ; Number 71 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliL; Number 72 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliM; Number 73 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliP; Number 74 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FliS; Number 75 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene FolB; Number 76 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene G3P_acyltransf; Number 77 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene GatB_N; Number 78 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene GcpE; Number 79 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Gln-synt_C; Number 80 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Glu-tRNAGln; Number 81 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene GrpE; Number 82 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene GSP_synth; Number 83 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HD_2; Number 84 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HD_3; Number 85 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HEM4; Number 86 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HobA; Number 87 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HP0268; Number 88 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HPPK; Number 89 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HSP90; Number 90 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HupF_HypC; Number 91 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HyaE; Number 92 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HycI; Number 93 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HypA; Number 94 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene HypD; Number 95 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ILVD_EDD; Number 96 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene IPPT; Number 97 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene IPT; Number 98 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Iso_dh; Number 99 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene KH_4; Number 100 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LacAB_rpiB; Number 101 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LGT; Number 102 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Lip_A_acyltrans; Number 103 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LolA; Number 104 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LptE; Number 105 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LpxB; Number 106 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LpxC; Number 107 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LpxK; Number 108 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Lum_binding; Number 109 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LuxS; Number 110 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene LYTB; Number 111 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Maf; Number 112 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MerR_2; Number 113 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Methyltrans_RNA; Number 114 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Methyltransf_5; Number 115 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MlaE; Number 116 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MnmE_helical; Number 117 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MoaC; Number 118 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MoaE; Number 119 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Mqo; Number 120 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MreC; Number 121 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene MurJ; Number 122 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene NAD_kinase; Number 123 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene NDK; Number 124 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene NIF3; Number 125 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene NifU_N; Number 126 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene NusG; Number 127 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene OMPdecase; Number 128 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene OSCP; Number 129 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Oxidored_q3; Number 130 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Oxidored_q4; Number 131 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pan_kinase; Number 132 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PDH; Number 133 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PdxA; Number 134 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PdxJ; Number 135 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pep_deformylase; Number 136 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pept_tRNA_hydro; Number 137 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_A8; Number 138 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_M17; Number 139 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_M22; Number 140 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_M3; Number 141 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_M99; Number 142 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Peptidase_U32; Number 143 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PGBA_N; Number 144 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PGI; Number 145 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PGK; Number 146 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PgpA; Number 147 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PhnA; Number 148 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PHO4; Number 149 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PMSR; Number 150 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Porphobil_deam; Number 151 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PRAI; Number 152 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Prenyltransf; Number 153 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pro_CA; Number 154 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pro_isomerase; Number 155 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Proteasome; Number 156 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PseudoU_synth_1; Number 157 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene PTPS; Number 158 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Put_Phosphatase; Number 159 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Pyrophosphatase; Number 160 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene QueH; Number 161 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Queuosine_synth; Number 162 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RBFA; Number 163 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribonuc_red_lgC; Number 164 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribonuc_red_sm; Number 165 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribonuclease_P; Number 166 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosom_S12_S23; Number 167 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L1; Number 168 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L13; Number 169 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L14; Number 170 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L16; Number 171 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L17; Number 172 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L18p; Number 173 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L19; Number 174 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L20; Number 175 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L21p; Number 176 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L22; Number 177 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L23; Number 178 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene ribosomal_L24; Number 179 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L27; Number 180 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L27A; Number 181 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L28; Number 182 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L29; Number 183 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L3; Number 184 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L31; Number 185 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L32p; Number 186 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L33; Number 187 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L34; Number 188 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L35p; Number 189 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L4; Number 190 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L6; Number 191 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_L9_C; Number 192 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S10; Number 193 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S11; Number 194 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S13; Number 195 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S14; Number 196 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S15; Number 197 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S16; Number 198 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S17; Number 199 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S19; Number 200 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S2; Number 201 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S20p; Number 202 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S21; Number 203 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S6; Number 204 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S7; Number 205 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S8; Number 206 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribosomal_S9; Number 207 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Ribul_P_3_epim; Number 208 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RNA_pol_L; Number 209 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RNA_pol_Rpb6; Number 210 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RNase_HII; Number 211 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RRF; Number 212 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RsfS; Number 213 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RuvC; Number 214 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene RuvX; Number 215 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Sacchrp_dh_C; Number 216 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Sdh_cyt; Number 217 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SecE; Number 218 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SecG; Number 219 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SecY; Number 220 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SelA; Number 221 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SelR; Number 222 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SHMT; Number 223 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SmpB; Number 224 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SPOUT_MTase; Number 225 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Sua5_yciO_yrdC; Number 226 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene SurE; Number 227 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TAL_FSA; Number 228 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TatC; Number 229 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TatD_DNase; Number 230 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TerB; Number 231 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TGT; Number 232 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Thy1; Number 233 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TP_methylase; Number 234 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Transcrip_reg; Number 235 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene tRNA_m1G_MT; Number 236 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene tRNA_synt_2f; Number 237 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene tRNA-synt_1d; Number 238 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene tRNA-synt_2c; Number 239 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene tRNA-synt_2e; Number 240 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TruD; Number 241 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Trypsin; Number 242 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene TsaE; Number 243 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UbiA; Number 244 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UbiD; Number 245 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UPF0054; Number 246 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UPF0093; Number 247 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UPF0102; Number 248 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene UPF0114; Number 249 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene URO-D; Number 250 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene Virul_fac_BrkB; Number 251 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YajC; Number 252 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YbaB_DNA_bd; Number 253 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YceG; Number 254 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YgbB; Number 255 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YGGT; Number 256 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+   --------------------------------------------------------------------------   
+	    Aligning and cleaning gene YidD; Number 257 of 257.
+   --------------------------------------------------------------------------   
+
+
+
+________________________________________________________________________________
+
+
+
+ ############################################################################## 
+ ####                  Catting all alignments together                     ####
+ ############################################################################## 
+
+           It is currently 10:07 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 5 minutes.
+
+
+________________________________________________________________________________
+
+
+
+ ############################################################################## 
+ ####                         Running FastTreeMP                           ####
+ ############################################################################## 
+
+           It is currently 10:07 AM; the process started at 10:01 AM.
+               Current process runtime: 0 hours and 5 minutes.
+
+FastTree Version 2.1.11 Double precision (No SSE3), OpenMP (1 threads)
+Alignment: Group4_prelim/Aligned_SCGs.faa
+Amino acid distances: BLOSUM45 Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Jones-Taylor-Thorton, CAT approximation with 20 rate categories
+Ignored unknown character X (seen 3840 times)
+Initial topology in 0.05 seconds
+Refining topology: 6 rounds ME-NNIs, 2 rounds ME-SPRs, 3 rounds ML-NNIs
+Total branch-length 0.007 after 0.05 sec
+ML-NNI round 1: LogLk = -182479.282 NNIs 0 max delta 0.00 Time 0.32
+      0.35 seconds: Site likelihoods with rate category 1 of 20
+      0.46 seconds: Site likelihoods with rate category 5 of 20
+      0.57 seconds: Site likelihoods with rate category 9 of 20
+      0.68 seconds: Site likelihoods with rate category 13 of 20
+      0.79 seconds: Site likelihoods with rate category 17 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.625 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+Use -gamma for approximate but comparable Gamma(20) log-likelihoods
+ML-NNI round 2: LogLk = -182316.120 NNIs 0 max delta 0.00 Time 0.91
+Turning off heuristics for final round of ML NNIs (converged)
+ML-NNI round 3: LogLk = -182316.120 NNIs 0 max delta 0.00 Time 0.94 (final)
+      0.94 seconds: ML Lengths 1 of 1 splits
+Optimize all lengths: LogLk = -182316.120 Time 1.19
+Total time: 1.71 seconds Unique: 3/3 Bad splits: 0/0
+
+
+#################################################################################
+####                                 Done!!                                  ####
+#################################################################################
+
+            All 3 input genomes were retained through the workflow!
+
+    Tree written to:
+        Group4_prelim/Group4_prelim.tre
+
+    Alignment written to:
+        Group4_prelim/Aligned_SCGs.faa
+
+    Main genomes summary table written to:
+        Group4_prelim/Genomes_summary_info.tsv
+
+    Summary table with hits per target gene per genome written to:
+        Group4_prelim/SCG_hit_counts.tsv
+
+    Partitions file (for downstream use with mixed-model treeing) written to:
+        Group4_prelim/run_files/Partitions.txt
+
+ _______________________________________________________________________________
+
+    Additional informative run files can be found in:
+        Group4_prelim/run_files/
+ _______________________________________________________________________________
+
+    Log file written to:
+        Group4_prelim/gtotree-runlog.txt
+ _______________________________________________________________________________
+
+    Programs used and their citations have been written to:
+        Group4_prelim/citations.txt
+
+ _______________________________________________________________________________
+
+
+                                         Total process runtime: 0 hours and 6 minutes.
+                                                      Happy Monday :)
+

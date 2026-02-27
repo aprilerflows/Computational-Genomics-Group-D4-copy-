@@ -1,0 +1,26 @@
+|--Parsnp 1.5.6--|
+For detailed documentation please see --> http://harvest.readthedocs.org/en/latest
+23:36:49 - [1;37mINFO[0m - 
+***************************
+SETTINGS:
+|-refgenome:	/home/nkodgi/group4/GCF_000009085.1_ASM908v1_genomic.fna
+|-genomes:	
+	/home/nkodgi/group4/input-sequences/D0340971_S01_L001-SKESA_contigs.fasta
+	/home/nkodgi/group4/input-sequences/D0287766_S01_L001-SKESA_contigs.fasta
+	...1 more file(s)...
+	/home/nkodgi/group4/input-sequences/D0262590_S01_L001-SKESA_contigs.fasta
+	/home/nkodgi/group4/input-sequences/D0133463_S01_L001-SKESA_contigs.fasta
+|-aligner:	muscle
+|-outdir:	output_dir
+|-OS:	Linux
+|-threads:	1
+***************************
+    
+23:36:49 - [1;37mINFO[0m - <<Parsnp started>>
+23:36:49 - [1;37mINFO[0m - No genbank file provided for reference annotations, skipping..
+23:36:49 - [1;37mINFO[0m - Recruiting genomes...
+23:36:58 - [1;37mINFO[0m - Running Parsnp multi-MUM search and libMUSCLE aligner...
+23:37:09 - [1;37mINFO[0m - Reconstructing core genome phylogeny...
+23:37:09 - [1;37mINFO[0m - Aligned 6 genomes in 18.85 seconds
+23:37:09 - [1;37mINFO[0m - Parsnp finished! All output available in output_dir
+Ref /home/nkodgi/group4/GCF_000009085.1_ASM908v1_genomic.fna

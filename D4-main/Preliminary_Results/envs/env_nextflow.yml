@@ -1,0 +1,8 @@
+name: nextflow_env
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - nextflow
+  - openjdk
+  - python=3.9

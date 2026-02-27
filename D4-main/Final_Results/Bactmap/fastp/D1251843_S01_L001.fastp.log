@@ -1,0 +1,51 @@
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 473374
+total bases: 71479474
+Q20 bases: 69483572(97.2077%)
+Q30 bases: 65945341(92.2577%)
+
+Read2 before filtering:
+total reads: 473374
+total bases: 71479474
+Q20 bases: 68758091(96.1928%)
+Q30 bases: 64233640(89.8631%)
+
+Read1 after filtering:
+total reads: 320588
+total bases: 47005337
+Q20 bases: 46854974(99.6801%)
+Q30 bases: 46096274(98.066%)
+
+Read2 aftering filtering:
+total reads: 320588
+total bases: 46966039
+Q20 bases: 46718634(99.4732%)
+Q30 bases: 45592866(97.0762%)
+
+Filtering result:
+reads passed filter: 641176
+reads failed due to low quality: 298602
+reads failed due to too many N: 0
+reads failed due to too short: 6970
+reads with adapter trimmed: 110889
+bases trimmed due to adapters: 4795799
+reads with polyX in 3' end: 4086
+bases trimmed in polyX tail: 81324
+
+Duplication rate: 2.98446%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: D1251843_S01_L001.fastp.json
+HTML report: D1251843_S01_L001.fastp.html
+
+fastp --in1 D1251843_S01_L001_1.fastq.gz --in2 D1251843_S01_L001_2.fastq.gz --out1 D1251843_S01_L001_1.trim.fastq.gz --out2 D1251843_S01_L001_2.trim.fastq.gz --json D1251843_S01_L001.fastp.json --html D1251843_S01_L001.fastp.html --thread 2 --detect_adapter_for_pe --cut_front --cut_tail --trim_poly_x --cut_mean_quality 30 --qualified_quality_phred 30 --unqualified_percent_limit 10 --length_required 50 --adapter_fasta adapter.fasta 
+fastp v0.20.1, time used: 56 seconds

@@ -1,0 +1,51 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 1339771
+total bases: 133977100
+Q20 bases: 133358904(99.5386%)
+Q30 bases: 131928458(98.4709%)
+
+Read2 before filtering:
+total reads: 1339771
+total bases: 133977100
+Q20 bases: 131553636(98.1911%)
+Q30 bases: 129349707(96.5461%)
+
+Read1 after filtering:
+total reads: 1247010
+total bases: 124105089
+Q20 bases: 124045817(99.9522%)
+Q30 bases: 123656121(99.6382%)
+
+Read2 aftering filtering:
+total reads: 1247010
+total bases: 123857684
+Q20 bases: 123658661(99.8393%)
+Q30 bases: 123029755(99.3315%)
+
+Filtering result:
+reads passed filter: 2494020
+reads failed due to low quality: 166576
+reads failed due to too many N: 2
+reads failed due to too short: 18944
+reads with adapter trimmed: 99456
+bases trimmed due to adapters: 898796
+reads with polyX in 3' end: 10343
+bases trimmed in polyX tail: 106117
+
+Duplication rate: 0.574682%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: D0110039_S01_L001.fastp.json
+HTML report: D0110039_S01_L001.fastp.html
+
+fastp --in1 D0110039_S01_L001_1.fastq.gz --in2 D0110039_S01_L001_2.fastq.gz --out1 D0110039_S01_L001_1.trim.fastq.gz --out2 D0110039_S01_L001_2.trim.fastq.gz --json D0110039_S01_L001.fastp.json --html D0110039_S01_L001.fastp.html --thread 2 --detect_adapter_for_pe --cut_front --cut_tail --trim_poly_x --cut_mean_quality 30 --qualified_quality_phred 30 --unqualified_percent_limit 10 --length_required 50 --adapter_fasta adapter.fasta 
+fastp v0.20.1, time used: 101 seconds

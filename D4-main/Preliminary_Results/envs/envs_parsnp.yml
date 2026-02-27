@@ -1,0 +1,8 @@
+name: parsnp_env
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - parsnp
+  - figtree        # to visualize resulting tree
+  - python=3.9

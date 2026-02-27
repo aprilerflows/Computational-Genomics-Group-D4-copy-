@@ -1,0 +1,49 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 905969
+total bases: 132695719
+Q20 bases: 125768554(94.7797%)
+Q30 bases: 123449328(93.0319%)
+
+Read2 before filtering:
+total reads: 905969
+total bases: 132708262
+Q20 bases: 125538155(94.5971%)
+Q30 bases: 122540693(92.3384%)
+
+Read1 after filtering:
+total reads: 660489
+total bases: 96265750
+Q20 bases: 94533464(98.2005%)
+Q30 bases: 93664990(97.2984%)
+
+Read2 aftering filtering:
+total reads: 660489
+total bases: 96227086
+Q20 bases: 94501896(98.2072%)
+Q30 bases: 93331987(96.9914%)
+
+Filtering result:
+reads passed filter: 1320978
+reads failed due to low quality: 480160
+reads failed due to too many N: 642
+reads failed due to too short: 10158
+reads with adapter trimmed: 49675
+bases trimmed due to adapters: 363103
+reads with polyX in 3' end: 8761
+bases trimmed in polyX tail: 164637
+
+Duplication rate: 0.965319%
+
+Insert size peak (evaluated by paired-end reads): 262
+
+JSON report: D1874688_S01_L001.fastp.json
+HTML report: D1874688_S01_L001.fastp.html
+
+fastp --in1 D1874688_S01_L001_1.fastq.gz --in2 D1874688_S01_L001_2.fastq.gz --out1 D1874688_S01_L001_1.trim.fastq.gz --out2 D1874688_S01_L001_2.trim.fastq.gz --json D1874688_S01_L001.fastp.json --html D1874688_S01_L001.fastp.html --thread 2 --detect_adapter_for_pe --cut_front --cut_tail --trim_poly_x --cut_mean_quality 30 --qualified_quality_phred 30 --unqualified_percent_limit 10 --length_required 50 --adapter_fasta adapter.fasta 
+fastp v0.20.1, time used: 102 seconds

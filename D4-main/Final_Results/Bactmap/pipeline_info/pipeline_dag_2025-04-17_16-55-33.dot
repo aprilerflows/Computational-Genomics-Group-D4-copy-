@@ -1,0 +1,530 @@
+digraph "pipeline_dag_20250417_165533" {
+v0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v106 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v0 -> v106 [label="ch_multiqc_custom_config"];
+
+v1 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v16 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v1 -> v16 [label="ch_software_versions"];
+
+v2 [shape=point,label="",fixedsize=true,width=0.1];
+v3 [label="NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK"];
+v2 -> v3 [label="samplesheet"];
+
+v3 [label="NFCORE_BACTMAP:BACTMAP:INPUT_CHECK:SAMPLESHEET_CHECK"];
+v4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="splitCsv"];
+v3 -> v4;
+
+v4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="splitCsv"];
+v5 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v4 -> v5;
+
+v5 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v5 -> v10 [label="sample_info"];
+
+v6 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="NFCORE_BACTMAP:BACTMAP:BWA_INDEX"];
+v6 -> v7 [label="fasta"];
+
+v7 [label="NFCORE_BACTMAP:BACTMAP:BWA_INDEX"];
+v27 [label="NFCORE_BACTMAP:BACTMAP:BWA_MEM"];
+v7 -> v27;
+
+v7 [label="NFCORE_BACTMAP:BACTMAP:BWA_INDEX"];
+v8 [shape=point];
+v7 -> v8;
+
+v9 [shape=point,label="",fixedsize=true,width=0.1];
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v9 -> v10 [label="adapter.fasta"];
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v17 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH"];
+v10 -> v17 [label="reads"];
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v111 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v10 -> v111;
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v13 [shape=point];
+v10 -> v13;
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v12 [shape=point];
+v10 -> v12;
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v14 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v10 -> v14;
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v11 [shape=point];
+v10 -> v11;
+
+v14 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v14 -> v15;
+
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v16 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v15 -> v16;
+
+v16 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v30 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v16 -> v30 [label="ch_software_versions"];
+
+v17 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH"];
+v18 [shape=point];
+v17 -> v18;
+
+v17 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH"];
+v19 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v17 -> v19;
+
+v17 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:MASH_SKETCH"];
+v25 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v17 -> v25;
+
+v19 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v20 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="combine"];
+v19 -> v20 [label="genome_size"];
+
+v10 [label="NFCORE_BACTMAP:BACTMAP:FASTP"];
+v20 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="combine"];
+v10 -> v20 [label="reads"];
+
+v20 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="combine"];
+v22 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA"];
+v20 -> v22 [label="reads_and_genome_size"];
+
+v21 [shape=point,label="",fixedsize=true,width=0.1];
+v22 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA"];
+v21 -> v22 [label="depth_cutoff"];
+
+v22 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA"];
+v27 [label="NFCORE_BACTMAP:BACTMAP:BWA_MEM"];
+v22 -> v27 [label="ch_reads"];
+
+v22 [label="NFCORE_BACTMAP:BACTMAP:SUB_SAMPLING:RASUSA"];
+v23 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v22 -> v23;
+
+v23 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v24 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v23 -> v24;
+
+v24 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v25 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v24 -> v25;
+
+v25 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v26 [shape=point];
+v25 -> v26 [label="version"];
+
+v27 [label="NFCORE_BACTMAP:BACTMAP:BWA_MEM"];
+v31 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT"];
+v27 -> v31 [label="bam"];
+
+v27 [label="NFCORE_BACTMAP:BACTMAP:BWA_MEM"];
+v28 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v27 -> v28;
+
+v28 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v29 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v28 -> v29;
+
+v29 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v30 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v29 -> v30;
+
+v30 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v45 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v30 -> v45 [label="ch_software_versions"];
+
+v31 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT"];
+v32 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX"];
+v31 -> v32 [label="bam"];
+
+v31 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT"];
+v43 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v31 -> v43 [label="samtools_version"];
+
+v32 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX"];
+v34 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="join"];
+v32 -> v34 [label="bai"];
+
+v32 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX"];
+v33 [shape=point];
+v32 -> v33;
+
+v31 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT"];
+v34 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="join"];
+v31 -> v34 [label="bam"];
+
+v34 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="join"];
+v35 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS"];
+v34 -> v35 [label="bam_bai"];
+
+v35 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS"];
+v113 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v35 -> v113 [label="stats"];
+
+v35 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS"];
+v36 [shape=point];
+v35 -> v36 [label="samtools_version"];
+
+v34 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="join"];
+v37 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT"];
+v34 -> v37 [label="bam_bai"];
+
+v37 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT"];
+v39 [shape=point];
+v37 -> v39 [label="flagstat"];
+
+v37 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT"];
+v38 [shape=point];
+v37 -> v38;
+
+v34 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="join"];
+v40 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS"];
+v34 -> v40 [label="bam_bai"];
+
+v40 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS"];
+v42 [shape=point];
+v40 -> v42 [label="idxstats"];
+
+v40 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS"];
+v41 [shape=point];
+v40 -> v41;
+
+v43 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v44 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v43 -> v44;
+
+v44 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v45 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v44 -> v45;
+
+v45 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v53 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v45 -> v53 [label="ch_software_versions"];
+
+v31 [label="NFCORE_BACTMAP:BACTMAP:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT"];
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v31 -> v47 [label="bam"];
+
+v46 [shape=point,label="",fixedsize=true,width=0.1];
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v46 -> v47 [label="fasta"];
+
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v49 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER"];
+v47 -> v49 [label="vcf"];
+
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v48 [shape=point];
+v47 -> v48 [label="tbi"];
+
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v115 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v47 -> v115 [label="stats"];
+
+v47 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_MPILEUP"];
+v51 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v47 -> v51 [label="bcftools_version"];
+
+v49 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER"];
+v55 [label="NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME"];
+v49 -> v55 [label="filtered_vcf"];
+
+v49 [label="NFCORE_BACTMAP:BACTMAP:VARIANTS_BCFTOOLS:BCFTOOLS_FILTER"];
+v50 [shape=point];
+v49 -> v50;
+
+v51 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="first"];
+v52 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v51 -> v52;
+
+v52 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v53 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v52 -> v53;
+
+v53 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v69 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v53 -> v69 [label="ch_software_versions"];
+
+v54 [shape=point,label="",fixedsize=true,width=0.1];
+v55 [label="NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME"];
+v54 -> v55 [label="reference"];
+
+v55 [label="NFCORE_BACTMAP:BACTMAP:VCF2PSEUDOGENOME"];
+v56 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v55 -> v56;
+
+v56 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v57 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v56 -> v57;
+
+v57 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v59 [label="NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES"];
+v57 -> v59;
+
+v58 [shape=point,label="",fixedsize=true,width=0.1];
+v59 [label="NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES"];
+v58 -> v59 [label="reference"];
+
+v59 [label="NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES"];
+v61 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="branch"];
+v59 -> v61;
+
+v59 [label="NFCORE_BACTMAP:BACTMAP:ALIGNPSEUDOGENOMES"];
+v60 [shape=point];
+v59 -> v60;
+
+v61 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="branch"];
+v62 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v61 -> v62;
+
+v61 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="branch"];
+v64 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v61 -> v64;
+
+v62 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="view"];
+v63 [shape=point];
+v62 -> v63;
+
+v64 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v65 [label="NFCORE_BACTMAP:BACTMAP:SNPSITES"];
+v64 -> v65 [label="aligned_pseudogenomes"];
+
+v65 [label="NFCORE_BACTMAP:BACTMAP:SNPSITES"];
+v67 [shape=point];
+v65 -> v67;
+
+v65 [label="NFCORE_BACTMAP:BACTMAP:SNPSITES"];
+v66 [shape=point];
+v65 -> v66;
+
+v65 [label="NFCORE_BACTMAP:BACTMAP:SNPSITES"];
+v68 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v65 -> v68;
+
+v65 [label="NFCORE_BACTMAP:BACTMAP:SNPSITES"];
+v87 [label="NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE"];
+v65 -> v87 [label="constant_sites_string"];
+
+v68 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v69 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v68 -> v69;
+
+v69 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v80 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v69 -> v80 [label="ch_software_versions"];
+
+v64 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v64 -> v70 [label="aligned_pseudogenomes"];
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v87 [label="NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE"];
+v70 -> v87 [label="fasta"];
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v78 [shape=point];
+v70 -> v78;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v77 [shape=point];
+v70 -> v77;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v76 [shape=point];
+v70 -> v76;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v75 [shape=point];
+v70 -> v75;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v74 [shape=point];
+v70 -> v74;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v73 [shape=point];
+v70 -> v73;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v72 [shape=point];
+v70 -> v72;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v71 [shape=point];
+v70 -> v71;
+
+v70 [label="NFCORE_BACTMAP:BACTMAP:GUBBINS"];
+v79 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v70 -> v79;
+
+v79 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v80 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v79 -> v80;
+
+v80 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v93 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v80 -> v93 [label="ch_software_versions"];
+
+v81 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v82 [shape=point];
+v81 -> v82 [label="rapidnj_tree"];
+
+v83 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v84 [shape=point];
+v83 -> v84 [label="fasttree_tree"];
+
+v85 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v86 [shape=point];
+v85 -> v86 [label="iqtree_tree"];
+
+v87 [label="NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE"];
+v88 [shape=point];
+v87 -> v88 [label="iqtree_tree"];
+
+v87 [label="NFCORE_BACTMAP:BACTMAP:CREATE_PHYLOGENY:IQTREE"];
+v97 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v87 -> v97 [label="iqtree_version"];
+
+v89 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.empty"];
+v90 [shape=point];
+v89 -> v90 [label="raxmlng_tree"];
+
+v91 [shape=point,label="",fixedsize=true,width=0.1];
+v92 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v91 -> v92;
+
+v92 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v93 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v92 -> v93;
+
+v93 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v96 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v93 -> v96 [label="ch_software_versions"];
+
+v94 [shape=point,label="",fixedsize=true,width=0.1];
+v95 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v94 -> v95;
+
+v95 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v96 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v95 -> v96;
+
+v96 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v98 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v96 -> v98 [label="ch_software_versions"];
+
+v97 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v98 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v97 -> v98;
+
+v98 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v101 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v98 -> v101 [label="ch_software_versions"];
+
+v99 [shape=point,label="",fixedsize=true,width=0.1];
+v100 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v99 -> v100;
+
+v100 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v101 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v100 -> v101;
+
+v101 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="mix"];
+v102 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v101 -> v102 [label="ch_software_versions"];
+
+v102 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="map"];
+v103 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v102 -> v103;
+
+v103 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v104 [label="NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS"];
+v103 -> v104;
+
+v104 [label="NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS"];
+v105 [shape=point];
+v104 -> v105;
+
+v104 [label="NFCORE_BACTMAP:BACTMAP:GET_SOFTWARE_VERSIONS"];
+v108 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v104 -> v108;
+
+v106 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v107 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v106 -> v107;
+
+v107 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v107 -> v118;
+
+v108 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v108 -> v118;
+
+v109 [shape=point,label="",fixedsize=true,width=0.1];
+v110 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collectFile"];
+v109 -> v110 [label="ch_workflow_summary"];
+
+v110 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collectFile"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v110 -> v118;
+
+v111 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v112 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v111 -> v112;
+
+v112 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v112 -> v118;
+
+v113 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v114 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v113 -> v114;
+
+v114 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v114 -> v118;
+
+v115 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v116 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v115 -> v116;
+
+v116 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="ifEmpty"];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v116 -> v118;
+
+v117 [shape=point,label="",fixedsize=true,width=0.1];
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v117 -> v118 [label="multiqc_config.yaml"];
+
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v122 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
+v118 -> v122;
+
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v121 [shape=point];
+v118 -> v121;
+
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v120 [shape=point];
+v118 -> v120;
+
+v118 [label="NFCORE_BACTMAP:BACTMAP:MULTIQC"];
+v119 [shape=point];
+v118 -> v119;
+
+v122 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
+v123 [shape=point];
+v122 -> v123;
+
+}

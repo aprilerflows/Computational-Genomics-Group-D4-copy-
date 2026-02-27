@@ -1,0 +1,10 @@
+D0110039_S01_L001.fasta
+D0340971_S01_L001.fasta
+reference_genome.fna
+
+
+
+
+
+
+
